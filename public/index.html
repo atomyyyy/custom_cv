@@ -10,6 +10,12 @@
       margin-right: 0.75cm;
     }
 
+    @media print {
+      .section {
+        break-inside: avoid;
+      }
+    }
+
     @font-face {
       font-family: 'Calibri';
       src: local('Calibri') format('truetype');
@@ -162,15 +168,36 @@
     <!-- Experience -->
     <div class="section">
       <div class="section-header"> <b>Work Experience</b> </div>
+      <!-- Amazon -->
+      <div class="experience">
+        <div class="container record">
+          <div class="job-title">
+            <span><b>Software Development Engineer</b>,</span>
+            <span><span style="color: navy">Amazon</span>,</span>
+            <span>Vancouver</span>
+          </div>
+          <div style="font-size:16px"><span>Aug 2024 — Present</span></div>
+        </div>
+        <div class="technical-stack"> Java / NodeJS / AWS </div>
+        <ul class="detail-list">
+          <li> Core developer in Amazon Tier 1 Checkout Platform team to orchestrate and integrate plugins from various global teams </li>
+          <li> Addressed service outages and performance degradation, by creating and tracking relevant tickets </li>
+          <li> Led efforts in preparing for scaling positions to ensure reliability during peak traffic periods</li>
+          <li> Led a team of 3 developers to setup infrastructure in newly launched region from scratch </li>
+          <li> Enhance region flexibility by extending the infrastructure to multiple locations within latency thresolds </li>
+          <li> Resolved infrastructure setup conflicts that caused intermittent issues, resulting in a daily loss of $2 millions </li>
+          <li> Enhanced operational excellence by introducing LLM automation for quarterly checks during internal audits </li>
+        </ul>
+      </div>
       <!-- Accenture -->
       <div class="experience">
         <div class="container record">
           <div class="job-title">
-            <span><b>Application Development / Data Engineering Specialist</b>,</span>
+            <span><b>Data Engineering Specialist</b>,</span>
             <span><span style="color: navy">Accenture Technology</span>,</span>
             <span>HK</span>
           </div>
-          <div style="font-size:16px"><span>Mar 2021 — Present</span></div>
+          <div style="font-size:16px"><span>Mar 2021 — Aug 2024</span></div>
         </div>
         <div class="technical-stack"> NodeJS / TypeScript / Spring Boot / Java / Openshift / Apache Spark / Scala / Python </div>
         <ul class="detail-list">
